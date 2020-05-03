@@ -1,0 +1,117 @@
+@import 'null.css';
+
+#app {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+  margin: 150px auto;
+}
+
+.block {
+  background-color: #fff;
+  border: 2px solid #f3f3f3f3;
+  border-radius: 5px;
+  padding-top: 30px;
+  width: 600px;
+}
+
+.title {
+  font-size: 26px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.line {
+  background-color: #f3f3f3;
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+.block__user {
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.block__user-left {
+  align-self: center;
+}
+
+.block__user-left p {
+  display: flex;
+  letter-spacing: 2px;
+}
+
+.status {
+  background-color: #537a31;
+  align-self: center;
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.block__user-right img {
+  border-radius: 50%;
+}
+
+.message__user {
+  align-self: center;
+}
+
+.message__user-top {
+  display: flex;
+  margin-top: 10px;
+}
+
+.name {
+  margin-top: 10px;
+  color: #4279c7;
+  font-weight: 700;
+}
+
+.message__user small {
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #ccc;
+  font-size: 10px;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.notification {
+  position: absolute;
+  top: 10px;
+  left: -200%; /* 80% */
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: 1px solid #b8daff;
+  width: 300px;
+  border-radius: 3px;
+  transition: .5s;
+}
+
+.notification p {
+  padding: .75rem 0.5rem;
+}
+
+.notification__close {
+  align-self: center;
+}
+
+.close {
+  color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}

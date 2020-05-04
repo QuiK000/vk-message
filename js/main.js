@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const styles = {
     green: 'green',
     red: 'red',
+    top: 50,
+    none: 'none'
   };
 
   function checkStatus() {
@@ -26,7 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
     notification.classList.remove('show');
   }
 
+  function showBlock() {
+    const preloader = document.querySelector('.spinner');
+    const block = document.querySelector('.block');
+    const px = 'px';
+
+    setInterval(() => {
+      preloader.style.display = styles.none;
+      block.style.top = styles.top + px;
+    }, 1500)
+    
+  }
+
   checkStatus();
+  showBlock();
   showNotification();
 
   close.addEventListener('click', unShowNotification);

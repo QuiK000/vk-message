@@ -9,6 +9,9 @@
 }
 
 .block {
+  position: absolute;
+  top: -100%;
+  transition: .3s;
   background-color: #fff;
   border: 2px solid #f3f3f3f3;
   border-radius: 5px;
@@ -107,6 +110,29 @@
 
 .close {
   color: #000;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  border-top: 3px solid #f25a41;
+  border-radius: 50%;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from{
+      transform: rotate(0deg);
+  }to{
+      transform: rotate(360deg);
+  }
 }
 
 .container {

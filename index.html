@@ -11,6 +11,16 @@
     .show {
       left: 80%;
     }
+    .paginator {
+      text-align: center;
+    }
+    .paginator span {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    .paginator__active {
+      color: #f24f86;
+    }
   </style>
 
 </head>
@@ -22,7 +32,7 @@
         <h2 class="title">Непрочитанные сообщения</h2>
       </div>
       <span class="line"></span>
-      <div class="block__user">
+      <div class="block__user" data-num=1 id="num">
         <div class="container">
           <div class="block__user-left">
             <p>
@@ -38,11 +48,11 @@
         </div>
       </div>
       <span class="line"></span>
-      <div class="block__user">
+      <div class="block__user" data-num=2 id="num">
         <div class="container">
           <div class="block__user-left">
             <p>
-              Vova Kotov
+              Быдло Kotov
               <span class="status"></span>
             </p>
           </div>
@@ -54,11 +64,11 @@
         </div>
       </div>
       <span class="line"></span>
-      <div class="block__user">
+      <div class="block__user" data-num=3 id="num">
         <div class="container">
           <div class="block__user-left">
             <p>
-              Vova Kotov
+              Марс Kotov
               <span class="status"></span>
             </p>
           </div>
@@ -70,11 +80,27 @@
         </div>
       </div>
       <span class="line"></span>
-      <div class="block__user">
+      <div class="block__user" data-num=4 id="num">
         <div class="container">
           <div class="block__user-left">
             <p>
-              Vova Kotov
+              Петух Kotov
+              <span class="status"></span>
+            </p>
+          </div>
+          <div class="block__user-right">
+            <a href="#">
+              <img src="https://vk.com/images/camera_200.png?ava=1" alt="avatar" width="50" class="avatar">
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="line"></span>
+      <div class="block__user" data-num=5 id="num">
+        <div class="container">
+          <div class="block__user-left">
+            <p>
+              Тест Kotov
               <span class="status"></span>
             </p>
           </div>
@@ -115,6 +141,8 @@
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="js/ajax.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 $.ajax({
-  type: "GET",
+  type: "POST",
   url: "https://vk.com/",
   data: "", // TODO: Назвать
   dataType: "json",

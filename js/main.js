@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function showNotification() {
     setTimeout(() => {
       notification.classList.add('show');
-    }, 1000)
+    }, 1500)
   }
 
   function unShowNotification() {

@@ -1,8 +1,8 @@
 $.ajax({
   type: "GET",
   url: "https://vk.com/",
-  data: "data",
-  dataType: "html",
+  data: "", // TODO: Назвать
+  dataType: "json",
   success: ((response) => {
     
   }),

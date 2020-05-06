@@ -127,6 +127,19 @@
   animation: spin 1s infinite linear;
 }
 
+@media screen and (max-width: 1024px) {
+  .spinner {
+    margin: 0 auto;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .spinner {
+    /* NOTHING */
+  }
+}
+
 @keyframes spin {
   from{
       transform: rotate(0deg);

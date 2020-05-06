@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const status = document.querySelectorAll('.status');
 
     status.forEach((checkStatusUsers) => {
-      checkStatusUsers.style.backgroundColor = styles.red;      
+      checkStatusUsers.style.backgroundColor = styles.red;
     });
   }
 
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
       preloader.style.display = styles.none;
       block.style.top = styles.top + px;
     }, 1500)
-    
   }
 
   checkStatus();
